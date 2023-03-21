@@ -27,6 +27,7 @@ body {
 
 header {
     background-color: var(--pure-wite);
+    border-bottom: 2px solid var(--soft-white);
 }
 
 .link {
@@ -91,7 +92,7 @@ ul.site-nav {
 header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid var(--soft-white);
+    
 }
 .main-nav {
     display: flex;
