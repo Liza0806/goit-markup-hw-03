@@ -34,6 +34,14 @@ header {
 }
 
 /*new code*/
+
+.main-nav {
+display: flex;
+align-items: center;
+margin-right: auto;
+}
+
+
 .link-webstudio {
     color: var(--accent);
     font-family: Raleway, sans-serif;
@@ -53,6 +61,18 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
+
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+ul.site-nav {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
 }
 
 .logo-studio {
@@ -67,14 +87,36 @@ header {
 }
 
 /*----navigation----*/
+header {
+    display: flex;
+    align-items: center;
+}
+.main-nav {
+    display: flex;
+}
 
-
+.address-hed {
+    display: flex;
+}
+ 
+ul.site-nav li:not(:first-child) {
+margin-left: 40px;
+}
 .nav-header:hover,
 .nav-header:focus {
     color: var(--blue);
 }
 
+.link-webstudio { 
+    margin-right: 72px;
+    margin-left: 156px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 
+}
+ul.auth-nav li:not(:first-child) {
+    margin-left: 40px;
+}
 .auth-nav {
     color: var(--primary-text-color);
     font-style: normal;
@@ -82,8 +124,14 @@ header {
     font-size: 16px;
     line-height: 1.5;
 
-}
+    margin-left: auto;
+    display: flex;
+    
 
+}
+ .address-hed {
+    margin-left: auto;
+ }
 .auth-nav-list {
     font-size: 16px;
     line-height: 1.5;
@@ -114,6 +162,9 @@ header {
     text-align: center;
     line-height: 1.07;
     letter-spacing: 0.02em;
+
+    margin: 0;
+        padding: 0;
 }
 
 .hero-button {
@@ -139,9 +190,26 @@ header {
 
 /*-----advantages-----*/
 
+section.advantages ul {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.advantages li.item {
+width:calc((100% - 30px - 72px)/4);
+
+    padding: 0;
+    margin: 0;
+}
 .advantages-title {
     color: var(--accent-text-color);
-
+margin: 0;
+padding: 0;
 
 }
 
@@ -152,6 +220,8 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
 
+    margin: 0;
+    padding: 0;
 }
 
 .advantages-text {
@@ -159,10 +229,19 @@ header {
 
     font-size: 16px;
     line-height: 1.5;
+
+    margin: 0;
+    padding: 0;
 }
 
 /*----works----*/
 
+.works ul.list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+
+}
 .works-title {
     color: var(--accent-text-color);
     font-weight: 700;
@@ -170,16 +249,38 @@ header {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+
+    margin: 0 0 72px 0;
+    padding: 0;
+}
+.works ul.list li:not(:last-child) {
+    margin-right: 24px;
 }
 
 /*---team-----*/
 
 .team {
     background-color: var(--soft-white);
+    padding: 120px 0 120px 0;
+    
+} 
+
+.team .persons {
+    background-color: var(--pure-wite);
+    display: block;
+    
+    
 }
 
-.team-persons {
-    background-color: var(--pure-wite);
+.team .persons:not(:last-child) {
+    margin-right: 24px;
+    
+}
+.team ul.list {
+    display: flex;
+    
+    margin: 0;
+justify-content: center;
 }
 
 .team-title {
@@ -191,6 +292,8 @@ header {
     text-transform: capitalize;
     letter-spacing: 0.02em;
 
+    margin: 0 0 72px 0;
+    padding: 0;
 
 }
 
@@ -201,6 +304,9 @@ header {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
+
+    margin: 0;
+        padding: 0;
 }
 
 .team-text {
@@ -208,6 +314,9 @@ header {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+
+    margin: 0;
+        padding: 0;
 }
 
 .footer {
@@ -222,13 +331,28 @@ header {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
 
+   
+    
+}
+ footer a {
+padding-top: 100px;
+    padding-bottom: 16px;
+    padding-left: 156px;
+    padding-right: auto;
+    display: inline-block;
+ }
 .footer-text {
     color: var(--footer-text);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    
+    max-width: 264px;
+    padding-left: 156px;
+    padding-right: auto;
+    padding-bottom: 100px;
+    padding-top: 0;
 
 }
 
@@ -251,7 +375,12 @@ header {
 
 /*-----PORTFOLIO----*/
 
-
+.nav-port {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
 .nav-button {
     color: var(--accent);
     font-family: "Roboto", sans-serif;
@@ -265,15 +394,38 @@ header {
     text-align: center;
     cursor: pointer;
 
-}
+    margin-top: 96px;
+    margin-bottom: 72px;
 
+    
+}
+.nav-port li:not(:last-child) {
+    margin-right: 24px;
+
+}
+ul.nav-port {
+    margin: 0;
+    padding: 0;
+}
 .nav-button:hover,
 .nav-button:focus {
     color: var(--pure-wite);
     background-color: var(--blue);
 }
-
-
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.gallery-container .li-port {
+    max-width:calc((100% - 30px - 48px)/3);
+    
+}
+.gallery-container .li-port:not(:last-child) {
+    margin-right: 24px;
+}
 .gallery-titile-small {
     color: var(--accent-text-color);
     font-weight: 500;
@@ -281,12 +433,18 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
 
+    padding: 0;
+    margin: 0 0 8px 16px;
 }
-
+.li-port img {
+    margin: 0 0 32px 0;
+}
 .gallery-text {
     color: var(--primary-text-color);
 
     font-size: 16px;
     line-height: 1.5;
 
+    margin: 0 0 32px 16px;
+    padding: 0;
 }
