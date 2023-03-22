@@ -27,7 +27,9 @@ body {
 
 header {
     background-color: var(--pure-wite);
-    border-bottom: 2px solid var(--soft-white);
+    border-bottom: 1px solid var(--soft-white);
+    max-width: 1440px;
+    margin: auto;
 }
 
 .link {
@@ -37,9 +39,9 @@ header {
 /*new code*/
 
 .main-nav {
-display: flex;
-align-items: center;
-margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
 }
 
 
@@ -66,7 +68,7 @@ margin-right: auto;
     margin: 0;
     padding: 0;
 
-    
+
 }
 
 ul.site-nav {
@@ -89,10 +91,13 @@ ul.site-nav {
 
 /*----navigation----*/
 
-header {
+
+.cont-header {
     display: flex;
     align-items: center;
-    
+    justify-content: flex-start;
+    padding: 0;
+    margin: auto;
 }
 .main-nav {
     display: flex;
@@ -101,25 +106,27 @@ header {
 .address-hed {
     display: flex;
 }
- 
+
 ul.site-nav li:not(:first-child) {
-margin-left: 40px;
+    margin-left: 40px;
 }
+
 .nav-header:hover,
 .nav-header:focus {
     color: var(--blue);
 }
 
-.link-webstudio { 
+.link-webstudio {
     margin-right: 72px;
-    margin-left: 156px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    
+    
 
 }
+
 ul.auth-nav li:not(:first-child) {
     margin-left: 40px;
 }
+
 .auth-nav {
     color: var(--primary-text-color);
     font-style: normal;
@@ -127,14 +134,14 @@ ul.auth-nav li:not(:first-child) {
     font-size: 16px;
     line-height: 1.5;
 
-    margin-left: auto;
-    display: flex;
     
+    display: flex;
+
 
 }
- .address-hed {
-    margin-left: auto;
- }
+
+
+
 .auth-nav-list {
     font-size: 16px;
     line-height: 1.5;
@@ -155,6 +162,9 @@ ul.auth-nav li:not(:first-child) {
 
 .hero {
     background-color: var(--accent-text-color);
+    max-width: 1440px;
+    padding: 188px 0;
+    margin: auto;
 }
 
 .hero-title {
@@ -166,8 +176,9 @@ ul.auth-nav li:not(:first-child) {
     line-height: 1.07;
     letter-spacing: 0.02em;
 
-    margin: 0;
-        padding: 0;
+    margin: 0 auto 48px auto;
+   
+    width: 496px;
 }
 
 .hero-button {
@@ -181,7 +192,13 @@ ul.auth-nav li:not(:first-child) {
 
     background-color: var(--accent);
     cursor: pointer;
+display: block;
+margin: 0 auto;
 
+height: 56px;
+width: 169px;
+border-radius: 4px;  
+padding: 16px, 32px;
 }
 
 .hero-button:hover,
@@ -204,15 +221,16 @@ section.advantages ul {
 }
 
 .advantages li.item {
-width:calc((100% - 30px - 72px)/4);
+    width: calc((100% - 30px - 72px)/4);
 
     padding: 0;
     margin: 0;
 }
+
 .advantages-title {
     color: var(--accent-text-color);
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -242,9 +260,11 @@ padding: 0;
 .works ul.list {
     display: flex;
     justify-content: center;
-    padding-bottom: 120px;
+    padding: 0 0 120px 0;
+    margin: 0;
 
 }
+
 .works-title {
     color: var(--accent-text-color);
     font-weight: 700;
@@ -256,6 +276,7 @@ padding: 0;
     margin: 0 0 72px 0;
     padding: 0;
 }
+
 .works ul.list li:not(:last-child) {
     margin-right: 24px;
 }
@@ -265,25 +286,27 @@ padding: 0;
 .team {
     background-color: var(--soft-white);
     padding: 120px 0 120px 0;
-    
-} 
+
+}
 
 .team .persons {
     background-color: var(--pure-wite);
     display: block;
-    
-    
+
+
 }
 
 .team .persons:not(:last-child) {
     margin-right: 24px;
-    
+
 }
+
 .team ul.list {
     display: flex;
-    
+
     margin: 0;
-justify-content: center;
+    padding: 0;
+    justify-content: center;
 }
 
 .team-title {
@@ -299,7 +322,11 @@ justify-content: center;
     padding: 0;
 
 }
+.cont-persons {
+    width: 232px;
+    margin: 32px 16px;
 
+}
 .team-title-small {
     color: var(--accent-text-color);
     font-weight: 500;
@@ -308,8 +335,8 @@ justify-content: center;
     text-align: center;
     letter-spacing: 0.02em;
 
-    margin: 0;
-        padding: 0;
+    margin: 0 0 8px 0;
+    padding: 0;
 }
 
 .team-text {
@@ -319,11 +346,13 @@ justify-content: center;
     text-align: center;
 
     margin: 0;
-        padding: 0;
+    padding: 0;
 }
 
 .footer {
     background-color: var(--accent-text-color);
+    max-width: 1440px;
+    margin: auto;
 }
 
 .footer-logo {
@@ -335,27 +364,28 @@ justify-content: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-   
-    
+
+
 }
- footer a {
-padding-top: 100px;
-    padding-bottom: 16px;
-    padding-left: 156px;
-    padding-right: auto;
-    display: inline-block;
- }
+
+.f-cont {
+    
+    
+    padding: 100px 0 100px 0;
+}
+
+
 .footer-text {
     color: var(--footer-text);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
+    display: block;
+    width: 264px;
     
-    max-width: 264px;
-    padding-left: 156px;
-    padding-right: auto;
-    padding-bottom: 100px;
-    padding-top: 0;
+
+    
 
 }
 
@@ -385,6 +415,7 @@ padding-top: 100px;
     margin-right: auto;
     justify-content: center;
 }
+
 .nav-button {
     color: var(--accent);
     font-family: "Roboto", sans-serif;
@@ -402,62 +433,72 @@ padding-top: 100px;
     margin-bottom: 72px;
 
     
+    padding: 12px 24px;
+border: 1px solid var(--footer-text);
+    border-radius: 4px;
+
 }
+
 .nav-port li {
     margin: 24px;
     margin-top: 24px;
 
 }
+
 ul.nav-port {
     margin: 0;
     padding: 0;
 }
+
 .nav-button:hover,
 .nav-button:focus {
     color: var(--pure-wite);
     background-color: var(--blue);
 }
+
 div .gallery-container {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
+    margin: 0 -24px 120px -24px;
     padding: 0;
-    margin-left: -24px;
-    margin-top: -24px;
+    
+    
 }
+
 .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
+
 .gallery-container .li-port {
-    max-width:calc((100% - 30px - 48px)/3);
-    
+    flex-basis: calc((100% - 30px - 48px)/3);
+
 }
+
 li.li-port {
     margin-top: 24px;
     margin-left: 24px;
 }
 
-div.card-thumb {
-    
+div.card-thumb {}
 
-}
 .sec-descr {
-    border-bottom: 2px solid var(--soft-white);
-        border-left: 2px solid var(--soft-white);
-        border-right: 2px solid var(--soft-white);
-        padding-top: 32px;
-        padding-bottom: 32px;
-        padding-left: 16px;
+    border-bottom: 1px solid var(--soft-white);
+    border-left: 1px solid var(--soft-white);
+    border-right: 1px solid var(--soft-white);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 
 img {
     display: block;
     max-width: 100%;
 }
+
 .gallery-titile-small {
     color: var(--accent-text-color);
     font-weight: 500;
@@ -465,7 +506,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    
+
     padding: 0;
     margin: 0 0 8px 0;
     
@@ -479,5 +520,5 @@ img {
 
     margin: 0;
     padding: 0;
-   
+    
 }
