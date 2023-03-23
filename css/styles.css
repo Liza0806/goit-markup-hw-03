@@ -23,12 +23,13 @@ body {
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: var(--pure-wite);
     border-bottom: 1px solid var(--soft-white);
-    max-width: 1440px;
     margin: auto;
 }
 
@@ -89,9 +90,14 @@ ul.site-nav {
     list-style: none;
 }
 
+.section {
+    padding: 120px 0;
+}
 /*----navigation----*/
 
-
+header {
+    max-width: 1440px;
+}
 .cont-header {
     display: flex;
     align-items: center;
@@ -105,6 +111,7 @@ ul.site-nav {
 
 .address-hed {
     display: flex;
+    
 }
 
 ul.site-nav li:not(:first-child) {
@@ -137,7 +144,7 @@ ul.auth-nav li:not(:first-child) {
     
     display: flex;
 
-
+padding: 0;
 }
 
 
@@ -194,9 +201,8 @@ ul.auth-nav li:not(:first-child) {
     cursor: pointer;
 display: block;
 margin: 0 auto;
-
 height: 56px;
-width: 169px;
+min-width: 169px;
 border-radius: 4px;  
 padding: 16px, 32px;
 }
@@ -212,8 +218,6 @@ padding: 16px, 32px;
 
 section.advantages ul {
     display: flex;
-    padding-top: 120px;
-    padding-bottom: 120px;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
@@ -256,11 +260,14 @@ section.advantages ul {
 }
 
 /*----works----*/
+.works > .container {
+    padding: 0 0 120px 0;
+}
 
 .works ul.list {
     display: flex;
     justify-content: center;
-    padding: 0 0 120px 0;
+    padding: 0;
     margin: 0;
 
 }
@@ -285,8 +292,12 @@ section.advantages ul {
 
 .team {
     background-color: var(--soft-white);
-    padding: 120px 0 120px 0;
+    max-width: 1440px;
+        margin: auto;
 
+}
+.team .container {
+    
 }
 
 .team .persons {
@@ -429,8 +440,7 @@ section.advantages ul {
     text-align: center;
     cursor: pointer;
 
-    margin-top: 96px;
-    margin-bottom: 72px;
+    
 
     
     padding: 12px 24px;
@@ -439,15 +449,11 @@ border: 1px solid var(--footer-text);
 
 }
 
-.nav-port li {
-    margin: 24px;
-    margin-top: 24px;
 
-}
 
 ul.nav-port {
-    margin: 0;
-    padding: 0;
+    margin: 96px 0 72px 0;
+    gap: 24px;
 }
 
 .nav-button:hover,
@@ -460,9 +466,11 @@ div .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -24px 120px -24px;
-    padding: 0;
-    
+   
+    padding: 0 0 120px 0;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin: 0;
     
 }
 
@@ -475,12 +483,12 @@ div .gallery-container {
 
 .gallery-container .li-port {
     flex-basis: calc((100% - 30px - 48px)/3);
+    
 
 }
 
 li.li-port {
-    margin-top: 24px;
-    margin-left: 24px;
+   
 }
 
 div.card-thumb {}
@@ -497,6 +505,7 @@ div.card-thumb {}
 img {
     display: block;
     max-width: 100%;
+    margin: 0;
 }
 
 .gallery-titile-small {
